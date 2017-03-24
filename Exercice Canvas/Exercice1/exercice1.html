@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercice1!</title>
+</head>
+<body>
+  <canvas id="mon_canvas" width="400" height="400"></canvas>
+    <script>
+    var c = document.getElementById( "mon_canvas" );
+    var ctx = c.getContext("2d");
+
+    // Toit
+    ctx.beginPath();      // Début du chemin
+    ctx.moveTo(140,70);   // Le tracé part du point 150,80
+    ctx.lineTo(219,170);  // Un segment est ajouté vers 300,230
+    ctx.lineTo(50,170);  // Un segment est ajouté vers 150,230
+    ctx.fillStyle = "#D38435"; // Définition de la couleur de remplissage
+    ctx.fill();           // Remplissage du dernier chemin tracé
+    ctx.closePath();      // Fermeture du chemin
+
+
+    // Fond
+    ctx.beginPath();      // Début d'un autre chemin
+    ctx.moveTo(52,170);
+    ctx.lineTo(52,300);
+    ctx.lineTo(220,300);
+    ctx.lineTo(220,170);
+    ctx.fillStyle = "#A4D7E7"; // Définition de la couleur de remplissage
+    ctx.fill();           // Remplissage du dernier chemin tracé
+    ctx.closePath();
+
+    // Porte
+    ctx.beginPath();      // Début d'un autre chemin
+    ctx.moveTo(120,250);
+    ctx.lineTo(120,300);
+    ctx.lineTo(150,300);
+    ctx.lineTo(150,250);
+    ctx.fillStyle = "#C9C9C9"; // Définition de la couleur de remplissage
+    ctx.fill();           // Remplissage du dernier chemin tracé
+    ctx.closePath();
+
+    // Fenetre1
+    ctx.beginPath();      // Début d'un autre chemin
+    ctx.moveTo(70,180);
+    ctx.lineTo(70,220);
+    ctx.lineTo(115,220);
+    ctx.lineTo(115,180);
+    ctx.fillStyle = "#C9C9C9"; // Définition de la couleur de remplissage
+    ctx.fill();           // Remplissage du dernier chemin tracé
+    ctx.closePath();
+
+    // Fenetre2
+    ctx.beginPath();      // Début d'un autre chemin
+    ctx.moveTo(160,180);
+    ctx.lineTo(160,220);
+    ctx.lineTo(205,220);
+    ctx.lineTo(205,180);
+    ctx.fillStyle = "#C9C9C9"; // Définition de la couleur de remplissage
+    ctx.fill();           // Remplissage du dernier chemin tracé
+    ctx.closePath();
+    </script>
+</body>
+</html>
